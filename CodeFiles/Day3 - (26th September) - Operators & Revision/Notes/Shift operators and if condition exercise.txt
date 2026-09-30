@@ -1,0 +1,48 @@
+Left shift operator(<<)
+It shifts the binary bits to the left hand side. Upon shifting the bits, number changes completely.
+after each left shift, number becomes double of itself.
+
+Syntax:
+	value = number << bits
+
+Example:-
+	n = 2
+	print("n<<1", n<<1)
+
+n = 2 = 0 0 1 0   - 2
+      = 3 2 1 0
+shift bits to the left by 1 bit
+     0 0  1 0 0   =  4
+     0 1  0 0 0   =  8
+     4 3  2 1 0
+------------------------------------------------------
+Q1. wap to check if the given password is a valid password or not
+->  length should be minimum 8 characters      length = len(varname)
+Q2. wap to change the ATM pin.  
+	->  First input previous pin and match whether it is correct or not
+	->  ask the user to provide the new pin
+	->  ask the user to retype the new pin
+	-> check whether the new pin matches the retype pin, if true then update the existing pin with new pin, otherwise print the error.
+Q3. Provide grades according to the marks
+	marks>=90  and marks <=100 ->  A Grade
+	   >=80 and <90  ->  B Grade
+	   >=70 and <80  ->  C Grade
+	   >=60 and <70  ->  D Grade
+	   >=50 and <60  ->  E Grade
+		<50      -> Fail
+	<0  - invalid
+Q4. An online shopping application checks whether the user's account has enough money.
+Take:
+Account balance
+Shopping amount
+If balance is sufficient:
+Payment Successful
+Otherwise:
+Insufficient Balance
+
+Q5. A cinema charges different prices based on age:
+Below 5 → Free
+5–12 → ₹100
+13–59 → ₹200
+60 and above → ₹120
+Take the customer's age and display the ticket price.

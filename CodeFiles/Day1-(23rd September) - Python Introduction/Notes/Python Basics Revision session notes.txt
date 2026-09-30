@@ -1,0 +1,67 @@
+Python
+------
+Python programming is a object oriented programming as well as general purpose language.
+It is interpreted language.
+It provides automation, AI, web development and more.
+it is very easy to program and provides easy syntax.
+it provides us many libraries, which holds many inbuilt functions.
+Python first version got released in 1991 but it got
+popularity in 2008
+------------------------------------
+Variables
+----------
+It is a short memory location which hold a temporary value.  vary+able
+In Python, there is no need to specify datatype of variable while defining it.
+for int type variables :   var=23, var=value
+for float variables:  var= 33.88
+for string value :   var = 'jjj',  var="ddd"  var''' dfd''',  var = """jdjjd"""
+for complex datatype :  var=23+2j,  var= 9j
+-------------------------------------
+input():  is used to input a string value by default.
+but if we want to input a value in any other datatype, then we need to use the type casting.
+	int(input("ddd"))
+	float(input("ddd"))
+
+formatted string in python
+--------------------------
+formatted string have literals, commonly known f-string which are very popular in modern, standard type.
+it is used to include value of variables with string.
+
+name="Simran"
+var = f"Welcome {name}"
+print(var)==     Welcome Simran
+------------------------------------
+Ternary Operator
+----------------
+it is a compact way of using if-else expression in one line.
+Syntax:
+	truevalue if condition else falsevalue
+
+Example :
+Q. check who is greater between a and b
+f"{a} is greater" if a>b else f"{b} is greater"
+
+Q. calculate bonus= 15% of salary if experience of person is greater than 10 years else calculate bonus= 10% of salary.
+salary = int(input("Enter salary : "))
+exp = int(input("Enter experience : "))
+bonus = 0.15*salary if exp>=10 else 0.10*salary
+print("Bonus :",bonus)
+
+Q1. Student Eligibility
+Write a Python program that takes a student's marks and attendance percentage. The student is eligible for the exam only if:
+Marks are greater than or equal to 40.
+Attendance is greater than or equal to 75%.
+
+Q2. Online Shopping
+Write a Python program that takes the purchase amount and whether he has membership or not.
+Give free delivery only when:
+Purchase amount is ₹1,000 or more AND
+Customer is a premium member.
+
+Test cases?
+compare two numbers??
+what will be the possible test cases
+>
+<
+==
+no number is given

@@ -1,0 +1,163 @@
+Identity Operator
+-----------------
+It compares memory locations of two objects to determine if they
+are the exact same instance in memory or not.
+There are two identity operators:-
+1.  is :  it returns true if both variables point to the same object
+in memory.
+
+2.  is not: it returns true if both variables doesn't share the same
+object in memory.
+
+a = [1,2,3]      = MM123
+b = a            = MM123
+c = [1,2,3]      = MM789
+
+a is b  True
+a is c  False
+
+a == c   True
+==  it compares values inside the object
+
+Bitwise Operator
+----------------
+1. Bitwise and (&)    :Bitwise and operator compares corresponding binary bits of two numbers and returns 1 only when both corresponding values are 1.
+
+5	0101
+3	0011     &
+-------------------
+	0001      =  1
+-------------------
+a= 5, b=3
+print("a & b : ", a&b)
+
+
+2. Bitwise or  (|) :  Bitwise or operator compares two corresponding values and returns 1 if at least one of the bits is 1.
+Example:
+a= 5, b=3
+print("a | b : ", a|b)  7
+5	0101
+3	0011     |
+-------------------
+	0111      =  7
+-------------------
+
+
+3. XOR (^) : Bitwise xor operator compares two corresponding values and returns 1 if both of the values are different, which means we have 0 1 or 1 0.  if both of the values are same which means 0 0 or 1 1, it returns 0.
+a= 5, b=3
+print("a ^ b : ", a^b)  6
+5	0101
+3	0011     ^
+-------------------
+	0110      =  6
+-------------------
+4. Bitwise Not(~) :  it reverses every bit of a number from 0 to 1 and 1 to 0. and applies 2's compliment.  For doing this operations it uses this formula :  -(n+1).
+
+~5  =  -6
+0000 0101 ->  1111 1010
+        1
+-----------
+0000 0110    =  -6
+
+0000 0101 +1
+
+
+5. Left Shift  (<<)   :  The left shift operator shifts the bits to the left side by 1 bit each time. In normal conditions, we can say that the number will be doubled in each left shift.
+		5 =  0000 0101
+		  98 7654 3210
+		  00 0001 0100  -  > 20
+            Example  :  5<<3 =  5->10->20->40
+
+
+6. Right Shift (>>):  The right shift operator shifts the bits to the right side. whenever there is right shift, value be decreased or divided to its half.
+		5 - >  0000 0101
+		       7654 3210
+		       0000 0010  1 will be discarded
+			=> 2
+Example  100 >> 1 =  50,  50>>1  = 25,  25>>1 = 12,   12>>3 =12->6->3->1  1>>1= 0>>2=0
+-----------------------------------------------------
+if Condition
+------------
+it is used to check a condition and if the condition is true, it executes the code written in first block and if the condition is false, then it executes the code written in else block.
+
+if condition:
+	code if statement is true
+	--
+	--
+	--
+else:
+	code if statement is false
+	--
+	--
+	--
+	--
+code outside the if and else block
+=> If statement with multiple conditions:-
+if condition1:
+	code if statement is true
+	--
+	--
+	--
+elif condition2:
+	code if statement is true
+	--
+	--
+	--
+elif condition3:
+	code if statement is true
+	--
+	--
+	--
+elif conditionN:
+	code if statement is true
+	--
+	--
+	--
+else:
+	code if statement is false
+	--
+	--
+	--
+	--
+---------------------------------------------------
+Q1. Check Whether Two Variables Refer to the Same Object
+A shopping application stores a customer's cart:
+cart1 = ["Laptop", "Mouse", "Keyboard"]
+cart2 = cart1
+cart3 = ["Laptop", "Mouse", "Keyboard"]
+
+Write a Python program to:
+Check whether cart1 and cart2 refer to the same object using is.
+Check whether cart1 and cart3 refer to the same object using is.
+Print suitable messages for both cases.
+---------------------------------------------------------
+Q2. Check User Permissions=
+A company's employee system represents permissions using numbers:
+READ    = 1
+WRITE   = 2
+DELETE  = 4
+An employee has the following permissions:
+permissions = 5
+Write a Python program using the bitwise AND (&) operator to check whether the employee has:
+READ permission
+WRITE permission
+DELETE permission
+Print:
+READ: Allowed
+WRITE: Not Allowed
+DELETE: Allowed
+
+-----------------------------------------
+Tip: The bitwise OR operator is useful for turning ON a particular bit without changing the bits that are already ON.
+Q3. Enable Features in a Mobile Application
+A mobile application has the following features:
+CAMERA     = 1
+LOCATION   = 2
+BLUETOOTH  = 4
+NFC        = 8
+Initially, the application has:
+features = 3
+The user wants to enable Bluetooth.
+Write a Python program using the bitwise OR (|) operator to add Bluetooth without disabling the existing features.
+Print the final value of features.
+----------------------------------------

@@ -1,0 +1,65 @@
+Q1. Find Differences Between Two Access Codes
+Two systems generate binary access codes:
+system1 = 12
+system2 = 10
+Write a Python program using the XOR (^) operator to find which bits are different between the two systems.
+Display:
+System 1: 12
+System 2: 10
+Different bits: ?
+Also print the binary representation of all three values.
+
+Q2. A game stores a player's score and wants to quickly multiply the score by powers of 2 using bitwise operations.
+Take a score from the user and use the left shift (<<) operator to calculate:
+Score × 2
+Score × 4
+Score × 8
+For example:
+Enter score: 10
+Score × 2 = 20     = score << 1
+Score × 4 = 40     = score << 2
+Score × 8 = 80     = score << 3
+
+Q3. A security application receives an integer status code from the user.
+Write a Python program that:
+Accepts an integer.
+Applies the bitwise NOT (~) operator.
+Displays the original number and the result.
+Example:
+Enter status code: 5
+Original: 5
+After NOT: -6
+
+Q4. Duplicate Transaction Detection — Bitwise XOR
+A payment system stores two transaction status values:
+transaction1 = 12
+transaction2 = 10
+The developer wants to use XOR (^) to identify the bits where the two status values are different.
+Question:
+Write the Python statement using XOR.
+Find the output.
+Explain what the result tells you about the two transaction values.
+
+Q5. A program has a default configuration object:
+
+DEFAULT_CONFIG = {
+    "theme": "light",
+    "notifications": True
+}
+
+config = DEFAULT_CONFIG
+
+The program also stores user permissions:
+
+READ = 1
+WRITE = 2
+DELETE = 4
+
+user_permission = 3
+
+Write a program that:
+
+Uses an identity operator to check whether config is the same object as DEFAULT_CONFIG.
+Uses a bitwise AND operator to check whether the user has WRITE permission.
+Uses a bitwise OR operator to add DELETE permission.
+Prints the final permission value.

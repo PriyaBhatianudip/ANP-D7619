@@ -1,0 +1,86 @@
+Python
+-------
+- general purpose language
+- provides simple and easy programming
+- also provides oops.
+- automatic garbage collection
+-  supports web development projects/ ML projects
+-  provides multiple libraries for performing multiple tsks
+-  we can automate tasks, build agents etc.
+-  api integration
+
+Features
+--------
+-  Easy to learn
+-  Interpreted language
+-  cross-platform language
+-  open source : python is free to use
+-  large ecosystem: it provides thousands of libraries which can perform multiple task.
+
+=> if python is interpreted, then it means python is slow??
+=> yes python is slow as it is an interpreted language. But the code is getting converted into the byte code which runs on Python Virtual Machine. Which improves its speed.
+--------------------------------------------
+python first version came in 1991
+But python got popular from third version.
+-----------------------------
+Create Projects
+
+-> click on new project
+-> select location for your project
+-> provide a name of the project
+-> select compiler and click finish
+
+--------------------------------
+Input  :  to get any value from the user, we use input() method. By default this method takes string type input. but we can use python methods to convert values into any other type. Example for integer type values, 
+we use int(input())  - for numbers only
+we use float(input())  - for decimal type values only
+we use boolean(input())  - for True/False only
+
+Output: to print a message, value of variable on the screen, we can use print() method:
+print("message")
+print(varname)
+print("message", varname)
+for formatted string  print(f"mmmmmdkdk  {varname}kdkdkd {varname}")
+----------------------------
+Variable: it is a short memory location which is used to store values temporarily.
+
+Create a variable
+varname = value;
+example
+id =101    -> int type
+price = 232.23  ->  float type
+name = 'Jai Kumar'  ->  string type
+---------------------------------
+Data types
+----------
+Numeric datatype:  to store numbers, digits etc, we use numeric datatype
+-  int : it will only number.
+-  float :-  to store decimal type values
+-  complex Number :  to store numbers containing a real and imaginary part.
+			num = 3+2j or num= 4j
+Boolean Datatype:  to store True or False
+String :  a character stream or a sequence of characters.
+In python, we can store a string using single quotes(''), double quotes("")
+or triple quotes(''' ''') (""" """), triple quotes or used to store multiline strings.
+Single quotes ('string') : standard text string, it provides cleaner look, it is preferred by python's internal string representation.
+Double quotes(" string ") :  used for storing string type values but prevents a syntax error due to the use of backward slash(\).
+Triple quotes : it is used to store multi-line string and naturally it preserves the exact line breaks.
+List :  to store multiple values in a single variable. it uses indices to identify each value. the index starts from 0. It is mutable in nature, which means the list is dynamic nature, its value can change or we can add, or remove elements from he list.
+names  =  [v1, v2, v3,......Vn]
+example
+names = ["Priya", "Atir", "Rameez"]
+	  0          1       2
+print(names[1])
+
+
+Tuple
+------
+it is similar to list and can be used to store multiple elements of different types as well. it is immutable in nature, which means that it can't add, remove or modify element.
+ob = (v1, v2, v3,.....vn)
+
+Self Study Topics
+Set
+Dictionary
+
+
+

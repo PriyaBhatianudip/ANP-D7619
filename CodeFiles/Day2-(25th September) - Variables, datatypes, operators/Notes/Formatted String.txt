@@ -1,0 +1,12 @@
+Formatted String
+----------------
+we can define a formatted string in multiple ways:-
+1. include variables with the string, without needing them to declare separately.
+
+name="Shanu"
+course ="Python"
+location =  "Gurgaon"
+
+A Student with name Shanu who lives in Gurgaon is enrolled in Python Course.
+
+f"A Student with name {name} who lives in {location} is enrolled in {course} Course."

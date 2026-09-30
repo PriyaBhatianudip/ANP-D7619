@@ -1,0 +1,63 @@
+Python Operators
+----------------
+Operators are special characters which are used to perform a particular operation.
+Types of Operators
+-----------------
+1. Arithmetic operators
+------------------------
+To perform basic calculations on numbers.
++  add
+-  subtract
+*  multiply
+/  division: it returns a decimal point value(float)
+// floor division:  it returns only the numerical digit and ignores the decimal portion.
+%  performs division operation but it returns the reminder or modulus.
+** Exponent :  it is used for calculating power eg. number**power
+2. Comparison Operator
+----------------------
+To compare two values, we use comparison operators. They return true or false.
+== :  checks for equality
+!= :  not equals
+>  : greater than
+<  : less than
+>= : greater than equals
+<= : less than equals
+
+3. Logical Operators
+---------------------
+It is used to combine conditions, we use logical operators.
+1. and :  it is used to combine two conditions and returns True, if both of the conditions are true, otherwise it returns false.
+	condition1 and condition2
+
+2. or:  if any of the condition is true, then it returns True. It returns False, only when all the conditions are false.  
+	condition or condition
+3. not : it returns True, if the result is False, and it returns False , if the result is True
+	not condition
+
+4. Assignment Operator
+----------------------
+To assign a value from right side to left side.
+= Equals sign: it assigns the value into a variable a=10
+
++=  it adds the values and then assign them in given variable. 
+	a+=10  (a=a+10)
+-=  subtract   a-=50,  (a=a-50)
+*=  multiply   a*=10,  (a=a*10)
+/=    a/=b  (a=a/b)
+//= eg.  a//=b (a=a//b)
+%=    a%=5 (a=a%5)
+**=   a**=b  (a=a**b)
+
+5. Membership Operator
+----------------------
+it is used to test whether the given value exists in the given list, string etc or not
+in : returns true if the value is present.
+not in :  returns true if the value is not present.
+
+Example:-
+vowels  a e i o u A E I O U
+'d' in "aeiouAEIOU'    False
+'E' in "aeiouAEIOU'    True
+
+
+Next session: Bit wise operators, identity operators, ternary operator
