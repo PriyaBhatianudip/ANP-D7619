@@ -1,0 +1,65 @@
+check branch:-  git branch
+when creating a new repository 
+git init -b  master(name)
+->  rename git repository(main)
+	git branch -M main(name)
+--------------------------------------
+Loop:  when we repeat certain steps in again and again, then
+that is known as a loop.
+
+Loops in programming: Loops are used to repeat a set of code
+again and again until a specific condition is satisfied.
+-> it helps us to reduce the code.
+->  it is more efficient and fast as the compiler is running
+the same command again and again.
+-> it is easier to use.
+
+In Python, we have two types of loops:-
+1. for loop : it defines that how many times the loop will run.  
+		it is used to traverse a sequence of numbers, characters, or values.
+		we can also use it to repeat a set of statements until it reaches last values.
+
+	Syntax:  
+		for var in range(start, end,step):
+			code
+		start :  initial value from which the loop will start. start=1.
+			start is set to 0 by default
+		end  :  value upto which the loop will run  (end=5)  in this case the 			loop will run <end
+		step :  it decides that how the loop will increment or decrement.
+			by default step is set to 1. If we provide a negative number in	
+			the step value, then the loop will run in reverse. In case of 				reversed loop, the start and end values should be defined 				accordingly.
+
+		To print 2s table
+		for n in range(2, 21, 2)
+			print(n)
+
+		To print counting from 1 to 10
+		for n in range(1,11):
+			print(n)
+		
+		If we provide only 1 value:-
+		for n in range(10):       # n=0 1,2,3,4,5,6,7,8,9
+			print(n)
+
+		To print numbers in reverse from 10 to 1
+		for n in range(10, 0,-2):
+			print(n)
+
+		To traverse characters in a string.
+		Hello World   = str
+		012345678910
+
+		for ch in str:
+			print(ch)
+
+			H
+			e
+			l
+			l
+			o
+		list = [1,2,3,4,5]
+		for n in list:
+			print(n)
+
+
+
