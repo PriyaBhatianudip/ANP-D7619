@@ -1,0 +1,26 @@
+end operator/variable:  it is used to define the end value of a print statement.
+By default, it is set to \n(new line operator). To change the behaviour of the print method so that it doesn't print the next value in next line we can use any character in end option. 
+
+print("hello", end="\n")
+print("world", end=" ")next value will not be printed in the next line. it will put a space between this value and next value.
+
+print("hello", end="\t")  -\t- tab space
+print("world")   
+
+Output 
+hello	world
+
+print("hello", end="#")  -\t- tab space
+print("world")   
+
+hello#world
+--------------------------------
+nested for loops:-
+for i in range(1,6):   -i=1, 2(pause)  i<11
+	for j in range(1,4):   j=1,2(pause)  j<11
+		for  k in range(1,5):  k=1 2(pause) k<11
+			for m in range(1, 11):  m=1 to 10(r), m<11
+				print("*")
+
+---------------------------------------------
+
