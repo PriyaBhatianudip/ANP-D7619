@@ -1,0 +1,50 @@
+Methods/Functions
+-----------------
+Methods or functions are used to define reusable code. Functions are standalone block of codes which does not require any reference of object/class to run.
+Methods are part of a class, which is also known as 
+instance of a class. To access these methods, we need to create object of a class. 
+These are subroutines, which are designed to perform a particular task.
+In Python, many inbuilt functions/methods are available, which are part of python libraries. 
+To access these functions/methods, we need to import those libraries in our programs.
+Methods/functions helps us to write reusable codes, which can be called or used as and when needed.
+
+Methods are of two types
+-------------------------
+Built-In functions  :  they are provided by python libraries. Usually many functions are available from standard python libraries. For special purpose functions, we need to import their libraries in our programs.
+Example of such libraries:-  numpy, pandas, matplotlib etc
+To access the functions of these libraries:-
+import libraryname as ob
+from libraryname import sublibrary/class
+
+2. User-defined functions: the functions, which we can define, according to our project's needs, are known as user-defined functions.  These are also known as custom functions.
+
+--------------------------------------------
+Syntax of a function
+--------------------
+def functionname(parameters):
+	code
+	code
+
+To call these functions:-
+->  functionname(values)
+
+Methods syntax:
+---------------
+class classname:
+	var=value
+	def methodname(self, parameters):
+		code
+		code
+
+To call this method:-
+-> first create an object of the class
+	obname = classname()
+-> obname.methodname(parameter)
+
+
+=> self keyword is an inbuilt reference object, which refers to its class. In future to access any instance variable from any method of the class, we will use self keyword.
+ 
+=> global : this keyword is used to refer to the variables, which are declared outside the function. if you want to modify the value or check it in a condition, then we need to declare that variable as a global variable inside the function.
+
+
+

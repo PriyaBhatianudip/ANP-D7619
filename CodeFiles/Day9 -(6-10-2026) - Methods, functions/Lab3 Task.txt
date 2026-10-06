@@ -1,0 +1,14 @@
+Lab3
+create a banking application using functions, where user must
+be able to perform folowing tasks:-
+1. Check balannce
+2. withdraw amount
+3. deposit amount
+4. change password
+5. exit when user chooses option number 5
+Tasks:
+Q1.  create another function to check login credentials
+if credentials match with the given credentials, only then
+allow user to enter the menu
+Q2. in change password, check password strength
+create another function to check password strength
