@@ -1,0 +1,77 @@
+List data structure
+---------------------
+It is a mutable data structure, which allows us to store heterogeneous data. It is mutable in nature, which means we can add or remove elements from a list. It uses indexing, and here index stats from 0. We can perform dynamic slicing over the elements of the list. 
+
+To get input a value in the list:-
+-> append():  it is used to add a new element in the list. it adds a single element. if we are appending another list to the existing list, then the another will be added to the current list
+as a nested list.
+	Syntax:		listob.append(value)
+
+It append() a list to another list
+	list1 =[1,2,3,4,5]
+	list2 = [89,90]
+list1.append(list2)
+	list1= [1,2,3,4,5,[89,90]]
+
+=>  extend():  it is used to add elements of another list into the existing list. It can also be used to add other elements like tuple, set or string as well.
+
+Syntax:  
+list1 =[22,44,55]
+list2 = [100,299,34,22]
+
+list1.extend(list2)
+list1 = [22,44,55,100,299, 34, 22]
+
+
+add a tuple to the list
+t1 = (23,55,22,90)
+list1.extend(t1)
+list1 = [22,44,55,100,299, 34, 22, 23, 55, 22, 90]
+
+add a string to the list
+str ="abc"
+list1.extend(str)
+list1 = [22,44,55,100,299, 34, 22, 23, 55, 22, 90, "a","b","c"]
+
+add a set to the list
+ss = {1,2,3,4,5}
+list1.extend(ss)
+
+=> insert(): insert new element at the given index.
+when it adds a new element at an index which already holds a value,
+in that case, it will shift the elements to the right side, and then add the new element at that position(index).
+if the index is out of bounds, then it will add the value at the last of list.
+
+list2 = [100,299,34,22]
+	  0    1  2  3
+n=300
+index = 2
+list2.insert(index, value)
+list2.insert(2, 300)
+list2 = [100,299,34,22]
+	  0    1  2  3
+list2 = [100,299,300, 34,22]
+	  0    1  2    3  4
+=> using insert() function with negative index
+list2.insert(-2, 89)
+list2 = [100,299,300, 34,22]
+	  0    1  2    3  4
+	-5    -4  -3   -2  -1
+if we provide a negative index, then it inserts the new element before the given index.
+----------------------------------------------------
+remove() : it is used to remove an element from list.
+if the given value is not present in the list, then it returns an exception  : ValueError
+Syntax :  
+	listob.remove(value)
+
+list2 = [100,299,300, 34,22]
+	  0    1  2    3  4
+list2.remove(300)
+list2 = [100,299,34,22]
+
+pop() :  it removes an element using the index.
+clear() :  it removes all the elements from the list.
+del keyword :  it is a python keyword, not a list method but it can also be used to delete an element from the list.
+Syntax:-
+	del listname[index]
+

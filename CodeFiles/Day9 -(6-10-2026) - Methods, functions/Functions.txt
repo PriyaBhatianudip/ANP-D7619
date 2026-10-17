@@ -1,0 +1,80 @@
+Functions:
+--------
+Functions are subroutines which can be used as ana when needed in our programs. It is a separate piece of code, which is used for performing a particular task. 
+It is easier to code and find errors in a function.
+This approach is also known as Modular approach or module-based approach.
+
+
+def addition():
+	n = int(input("Enter number of values to add : "))
+	sum=0
+	for x in range(1, n+1):
+		m = int(input("enter number :"))
+		sum+=m
+	print("Sum : ",sum)
+
+def countDigits(n):
+	count =0
+	
+	while(n>0):
+		count+=1
+		n-=1
+	return count
+
+To call functions
+functioname()   ->  addition()
+function with parameters
+var = functionname(value)
+ndigits = countDigits(2992)
+n = 12233
+ndigits = countDigits(n)
+
+-----------------------------------------------------
+Q. Wap to create following functions:-
+1.  function to find the sum of n numbers
+2.  function to check whether a number if even or odd.
+	return whether the number is even or odd.
+3.  function to check whether a number is palindrome or not
+4.  function to reverse a number. Here number will be passed as parameter. the reversed number will be returned.
+---------------------------
+String slicing
+str[start:end:step]
+ reverse = n[::-1]  #  321
+if we take -1 as the step value, then the string will be printed in reverse order.
+--------------------------------------------
+wap to sort a list of objects containing id name age salary by age in a new list.
+ob1	ob2	ob3	ob4	ob5
+id	id	id	id	id
+name	name	name	name	name
+age	age	age	age	age
+salary	salary	salary	salary	salary
+---------------------------------------------
+1. function without parameter and without return value
+	def functioname():
+		code
+		code
+
+to call -  functionname()
+
+2. function with parameters but no return value
+	def functioname(var1, var2,....varn):
+		code
+		code
+		
+to call -  functionname(value1, value2,.....varn)
+3. function with return value but no parameter
+	def functioname():
+		code
+		code
+		return value
+to call :  var = functioname()
+4. function with parameter and return value
+	def functioname(var1, var2,....varn)
+		code
+		code
+		return value
+to call :  var = functioname(value1, value2....valuen)
+
+
+
+

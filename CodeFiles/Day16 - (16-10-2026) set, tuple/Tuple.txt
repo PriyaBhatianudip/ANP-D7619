@@ -1,0 +1,68 @@
+Tuple
+------
+It is a data structure where we can store multiple types of data. It is an ordered collection of elements which is immutable in nature, which means that we cannot change the elements of a tuple.
+
+Syntax:
+	ob = (v1,v2,v3,v4,.....)
+	ob = tuple((v1, v2, v3,...))
+
+To access a single element of a tuple
+tuplename[index]
+
+Slicing in tuple:
+tuplename[startindex:endindex:step value]
+
+Methods :
+1. count(): it returns the total number of elements.
+	val = ob.count()
+
+2. index()to get the index of an element, we use index  method.
+		val = ob.index(value)
+
+3. len(): it returns the length of the tuple.
+	val = ob.len()
+
+4. max(): it returns the max value
+5. min(): it returns the lowest value
+6. sum(): it returns the total(sum) of a value
+7. sorted():  it returns a new sorted list of elements. It doesn't modify te existing list.
+6. reversed(): it returns the reverse of the tuple values.
+
+----------------------------------------
+Q1. Create a tuple containing the following values:
+(10, 20, 30, 40, 50)
+Print the first, third, and last elements.
+Find :-
+Maximum value
+Minimum value
+Sum
+Q2. Count how many times a given number occurs in a tuple.
+Q3. Create a new tuple containing only the even-indexed elements.
+--------------------------------------------
+set data structure
+------------------
+it is also an built in data structure which is used to store only unique values. it automatically ignores the duplicate value as it store only unique elements. it doesn't maintain the insertion order.
+set does not support  indexing. They are mutable in nature, which means you can add, remove, update elements of the set.
+
+setob= {v1, v2, v3, .....}
+setob = set({v1, v2, ......})
+
+
+setob = set(list)
+setob = set(tuple)
+
+=> add():  it is used to add elements to the set. it adds a single elements at time.
+	Syntax:  setob.add(value)
+=>  update(): update function is used to add multiple elements to the set.
+	Syntax: setob.update([v1, v2, v3,...])
+
+=> remove():  it is used to remove an element from the set. if it doesn't find the value, then it raises a KeyError.
+	Syntax :  setob.remove(value)
+
+=> discard():  it is also used for removing elements from the set. if the value doesn't exists, then it does not raise any error.
+	Syntax :  setob.discard(value)
+
+=>pop():  it is used to remove an arbitrary element from the set.
+	Syntax :  seob.pop()
+=> clear():  it removes all the elements from the set.
+	setob.clear()

@@ -1,0 +1,89 @@
+String Slicing
+--------------
+It is used to extract substring from the given string. 
+we can mention the startindex, endindex and step value to extract
+characters.
+Syntax:  
+	str[startindex:endindex:stepvalue]
+
+=> startindex :  it mentions the starting index from where we will
+get the characters. if we don't provide the startindex, in that case
+it takes 0 as a start index.
+
+=> endindex : it mentions the last index upto which the characters
+will be extracted. if we don't provide endindex, it takes the length of the string.
+
+=> step value:  it defines the increment or decrement value for the string.
+By default, it is set to 1, which means, when it starts extracting characters,
+it will give the increment of 1, but if we provide two, it will extract every 2nd character.
+we can also use decrement by using -1. it decrements the index. 
+0123456789011
+Hello Python!!
+s1[2:7:2]
+loP
+
+s1[:8]  ->  Hello Py
+s1[5::]  ->  Python
+s1[::-1] - > nothyP olleH
+s1[-1:-7:-1]
+-1
+-2
+-3
+-4
+-5
+-6
+print("extract only python using decrement : ", s1[12:5:-1])
+12
+split():It is used to split a string in multiple words and store each word in the list format. By default it takes space as a split character. 
+default syntax : str.split()  
+custom split : str.split('char')
+s1 = "12/2/2026"
+s1.split('/') ["12", "2", "2026"]
+---------------------------------
+in :  it checks a string whether it contains the given string or not. it returns true if it finds the substring, otherwise returns false
+not in: it it the opposite of in operator. it returns true, if it doesn't find the string, otherwise it returns false.
+
+word in string
+word not in string
+
+------------------------------------
+printf("welcome %s", name)
+printf("age : %d", age)
+%s  - string
+%d  - decimal number(int)
+%f  - float
+
+In python, to use formatted strings like c language:-
+"string.............formatted character------"%(var1, var2,...)
+--------------------------------------
+ASCII -  American standard code for information interchange
+it is used for defining a unique index value for each keyboard character.
+it starts from 0 and in total it has 255 characters but occupied indices is upto 128.
+unicode: Universal Code: it is the extension of ASCII. 
+unicode range starts from ascii values but it includes almost all the
+languages and scripts including number formats.
+it's range starts from 0 and it has around 65535 characters.
+
+1 byte-   8 bits  0 - 255
+2 byte -  16 bits 0 - 65535
+
+3. Write a Python program to reverse words in a string
+String = “Deeptech Python Training”
+=         hcetpeeD nohtyP ginniarT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

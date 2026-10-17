@@ -1,0 +1,74 @@
+Python Assessment
+
+Q1. What is the output of the following code?
+
+x = 10
+y = 3
+print(x % y)
+
+A. 3
+B. 1
+C. 3.33
+D. 0
+
+
+Q2. Which keyword is used to check multiple conditions in Python?
+
+A. for
+B. def
+C. elif
+D. break
+
+
+Q3. What is the output of the following code?
+
+for i in range(1, 4):
+    print(i, end=" ")
+
+A. 0 1 2 3
+B. 1 2 3
+C. 1 2 3 4
+D. 0 1 2
+
+
+Q4. Which keyword is used to define a function in Python?
+
+A. function
+B. define
+C. def
+D. fun
+
+
+Q5. What is the output of the following code?
+
+def check(num):
+    if num > 5:
+        return "Yes"
+    else:
+        return "No"
+
+print(check(3))
+A. Yes
+B. No
+C. 3
+D. Error
+
+Practical Questions
+Q1. Operators
+Write a Python program that takes two numbers from the user and displays their sum, difference, product, and remainder.
+
+Q2. If-Else Conditions
+Write a Python program that takes a number from the user and checks whether it is even or odd.
+
+Q3. If-Elif-Else Conditions
+Write a Python program that takes a student's marks as input and displays the grade using these rules:
+- 90 and above: Grade A
+- 75 to 89: Grade B
+- 60 to 74: Grade C
+- Below 60: Grade D
+
+Q4. Loops
+Write a Python program that takes a positive integer from the user and prints its multiplication table from 1 to 10.
+
+Q5. Functions
+Write a function named is_prime(number) that checks whether a number is prime. Call the function with a number entered by the user and display the result.

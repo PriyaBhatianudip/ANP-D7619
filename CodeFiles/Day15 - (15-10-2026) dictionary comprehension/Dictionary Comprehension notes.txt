@@ -1,0 +1,49 @@
+Dictionary Comprehension
+-------------------------
+It is a short and easy way to create a dictionary using a single line of code instead of writing a for loop or user constructs.
+Syntax:
+ob = {key:value for item in iterable}
+
+->  key :  the key of the dictionary
+->  value :  the value associated with the key.
+-> item :  each element obtained from the iterable.
+-> iterable :  a list, tuple, string, range etc.
+Example:-
+squares={}
+
+for i in range(1,6):
+	squares[i]=i*i
+print(squares)
+squares = {1:1, 2:4, 3:9, 4:16, 5:25}
+
+using dictionary comprehension
+-----------------------------
+squares = {i:i*i for i in range(1,6)}
+print(squares)
+
+Dictionary comprehension using if
+-----------------------------------
+ob = {key:value for item in iterable if condition}
+
+Difference b/w List Comprehension & Dictionary Comprehension
+Syntax:
+[expression for item in iterable]
+{key: value for item in iterable}
+Output
+List []	Dictionary {}
+Stores
+list Individual values
+dictionary Key-value pairs
+Access
+list Using index
+dictionary Using key
+Duplicate values
+List Allows duplicate values
+Dictionary says Keys must be unique
+Conditional filtering
+In List	Supported
+In Dictionary Supported
+
+
+
+ 

@@ -1,0 +1,35 @@
+Data Structures in Python
+- tuple: 
+unpacking :  it is used to extract multiple values from the tuple. if we have only few elements like 2,or 3 etc, then we can simply put them into multiple variables. but if we want unpack only  few elements from the tuple and pack rest of the elements in a separate object, then we will use args feature.
+*args
+*-> any number of elements
+Syntax:   *varname
+This feature is also known as extended unpacking. extended list elements will be stored as a list.
+Example:-
+t1= (22,44,77,90,59,99)
+a,b,*c =t1
+a=22
+b=44
+c =[77,90,59,99]
+
+=>  extract first and last element
+var1, *var2, var3
+=>  to ignore values, we can use underscore(_).
+Syntax :   
+Single value
+var1, _, *var
+_, var1, var2, *var
+=> to ignore multiple elements, we use *_:-
+var1, var2, *_
+--------------------------
+index():  it returns the index of first occurrence of the given number.
+syntax:
+ob.index(value)
+ob.index(value, startindex)
+
+- set:
+To create a set in python:-
+set literal
+ob = {v1,v2,....}
+ob = set()  <- empty set
+ob = set(iterable)

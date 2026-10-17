@@ -1,0 +1,81 @@
+set data structure
+------------------
+It is used to store data. It is an unordered collection of unique elements.
+It is an inbuilt data structure that can store multiple type of values.
+Features:-
+1. Unordered Collection : it doesn't follow any order while inserting elements into the set. It does not maintain the insertion order.
+2. Unique elements: it stores only unique values
+3. Mutable : it can grow or shrink in size which means we can add or remove elements.
+4. Mathematical set operations:  it supports multiple math operations like addition, subtraction, union, intersection etc.
+5. it is defined using curly brackets{}.
+6. No indexing is used.
+
+--------------------------------------------
+Syntax:
+	ob = {v1,v2,v3,v5,.......}
+	ob = {} -> to create an empty set
+	ob = set(string) ->  using constructor
+	ob = set(listob) ->  using constructor	
+	
+----------------------------
+To add or remove elements to the set
+add(): to add elements
+remove(): to remove elements. it can throw an exception it value is not there
+discard(): it removes elements from the set. it will not throw any exception, if it doesn't find any value. 
+clear(): it will remove all the elements from the set.
+union(): it will combine two sets and returns all the values from both of the sets. it will not repeat if one value is present in both of the sets.
+example
+	set1 ={1,2,3}
+	set2 = {4,5,6,3}
+	result = set1.union(set2)
+		1,2,3,4,5,6
+intersection(): it shows only common values.
+	set1 ={1,2,3}
+	set2 = {4,5,6,3}
+	result = set1.intersection(set2)  =  3
+difference():  it contains elements which are present in first set but not in the second set.
+	set1 ={1,2,3}
+	set2 = {4,5,6,3}
+	result = set1.difference(set2)
+
+
+ Symmetric_difference():  It contains elements that are in either of the sets but not in both.
+
+	set1 ={1,2,3}
+	set2 = {4,5,6,3}
+	result = set1.symmetric_difference(set2)  1,2,4,5,6
+	
+issubset() / issuperset():
+----------------------------
+issubset(): It returns true or false, depending on the values of the set.
+True - when all the elements of first set are available in second set, otherwise it will return false.
+issuuperset(): it returns true, if the first set contains all the elements of the second set, otherwise it returns false.
+----------------------------------------------------
+
+====================================
+ STUDENT SKILL & PLACEMENT SYSTEM
+====================================
+1. Display course strength
+2. Add student to course
+3. Remove student from course
+4. Python + Java students
+5. Python but not Java
+6. Python + Data Science
+7. Python + Power BI but not Java
+8. Placement students with Python + SQL
+9. Python students who missed placement
+10. Special placement eligible students
+11. Total unique students
+12. Students with 3+ technical skills
+13. Exit
+
+----------------------------
+Enter your choice: 1
+----- COURSE STRENGTH -----
+Python: 20
+Java: 20
+Data Science: 18
+Power BI: 18
+SQL: 19
+
+

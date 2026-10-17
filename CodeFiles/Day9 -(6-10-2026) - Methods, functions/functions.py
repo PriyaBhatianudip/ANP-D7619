@@ -69,16 +69,25 @@ def changePassword():
             attempts += 1
         else:
             newpwd = input("Enter new Password : ")
-            retype = input("Retype New Password : ")
+            result = checkPasswordStrength(newpwd)
+            if result==True:
+                print("Password strength is good")
+                retype = input("Retype New Password : ")
 
-            if retype != newpwd:
-                print("Password does not match")
+                if retype != newpwd:
+                    print("Password does not match")
+                else:
+                    password = newpwd
+                    print(f"Password changed successfully!!")
+                break
             else:
-                password = newpwd
-                print(f"Password changed successfully!!")
-            break
+                print("Password strength is not good")
+
     if attempts == 3:
         print("Maximum number of attempts reached!!")
+def checkPasswordStrength(pwd):
+    print("Password strength is good")
+
 
 # Assignment
 #  create a banking application using functions, where user must

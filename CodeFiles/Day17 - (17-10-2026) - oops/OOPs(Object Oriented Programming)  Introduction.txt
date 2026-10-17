@@ -1,0 +1,33 @@
+OOPs(Object Oriented Programming)
+---------------------------------
+object oriented programming approach allows us to write a program/project using classes and objects. It helps us in organizing code in reusable, manageable and logical units.
+In Python, oops allows us to represent real-world  entities such as student, employee etc.
+
+Every entity has these two things:-
+1. properties  like its values like studentid, name, marks etc
+2. behaviour :  methods which defines that which functions will be performed by a class. Example : calculate marks/percentage, display student information etc.
+
+Class : It is a blue print of an object and defines how a class behaves and which attributes it has. the class behaviour is defined by its methods and attributes are defined using variables. 
+
+Syntax:
+class ClassName:
+   var1 =value
+   var2 = value
+   def methodname1(self, var1,var2,...):
+	code
+
+   def methodname2(self, var1,var2,...):
+	code
+	sum = self.var1+self.var2
+	self.methodname1()
+
+Object : it is an instance of a class. By using an object, we can access any variable or method of a class. Every object has a separate  memory location where its attributes are stored. 
+Syntax:
+obname = Classname()
+
+To access variables or methods of a class
+->   variable -> ob.varname
+->   method  ->  ob.methodname(v1,....)
+
+
+ 

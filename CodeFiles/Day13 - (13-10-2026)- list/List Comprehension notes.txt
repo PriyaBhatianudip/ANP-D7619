@@ -1,0 +1,27 @@
+List Comprehension
+-------------------
+-> create a list of numbers from 1 to 10.
+-> Generate square of numbers from 1 to 10.
+
+-> Replace all negative numbers with zero in following list:-
+input	numbers = [10, -4, 93, -3, 33, -7, -21]
+output  numbers = [10, 0, 93, 0, 33, 0, 0]
+
+->remove empty strings from the given list:-
+input items = ["Laptop", "", "TV", "Mouse", "", "", "keyboard", "", "Tab"]
+
+output
+items = ["Laptop", "TV", "Mouse", "keyboard","Tab"]
+
+enumeration :  means listing or counting items one by one , usually using a number or index. 
+enumerate():  is used to get both index and value while iterating  over a sequence.
+
+Syntax:
+items = ["Laptop", "TV", "Mouse", "keyboard","Tab"]
+for index, name in enumerate(items):
+	print(f"{index} : {name}")
+0 : Laptop
+1 : TV
+
+
+

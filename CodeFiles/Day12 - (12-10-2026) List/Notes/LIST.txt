@@ -1,0 +1,48 @@
+LIST
+----
+- it is a built-in data structure 
+- It is used to store multiple type of data in sequential format.
+- it maintains the insertion order
+- we can access elements of list using the index as well.
+- indexing starts from 0.
+
+ob = [val1,val2, val3, .....]
+
+ob = list([v1, v2, v3,....])
+-----------------------------------
+Slicing in Python
+-----------------
+Slicing is a filtration tool which is used to filter records according to the given values. 
+Syntax:
+listob[startindex:endindex:stepvalue]
+listob[startindex::]
+startindex:  the index from where the slicing will start.
+endindex:  the index upto which we will extract the elements. it will always take elements index < end index
+stepvalue: the increment value to get the elements of the list. by default it is set to 1. but if we don't provide any value, then also it will take 1 only.
+step value can be in negative also. in that case it will provide values in reverse order. but the start index and end index should contain value according to it.
+
+Condition based filtering in list
+----------------------------------
+To filter records according to the given condition we can also use conditions instead of slicing.
+listob[condition]
+
+list functions
+----------------
+len():  it returns the length of the list.
+	var = len(listob)
+append() : it is used to add new element in the list
+	list.append(value)
+
+extend():  it is used to extend a list. it helps in adding more elements to the list.
+	list.extend([v1,v2,....])
+insert() :  it is used to add a new element at the given index.
+	list.insert(value, index)
+remove():  it removes the first occurrence of a specific value from the list.
+		list.remove(value)
+pop() :  it removes the last value from the list.
+		var = list.pop()
+index() :  it returns the index of the first occurrence of a specific value. it returns -1, if it doesn't find the value.
+		index = list.index(value)
+
+
+

@@ -1,0 +1,119 @@
+Loops:
+-------
+Whenever we are required to repeat a set of instructions, we use loops.
+it iterates over a set of commands to complete a task.
+
+Loops are of two types:-
+1. for : this loop runs until the given range  is complete. 
+here we can provide start and stop value. so that the loop can run
+for a fixed number of times. we can also use for loop to traverse
+a string characters one by one. or elements of a list one by one.
+
+for var in ob:
+	code
+	code
+
+for string:-
+str = "Hello Python"
+for ch in str:
+	print(ch)
+
+for list:-
+seq = [11,22,343,55,66,77,88]
+for n in seq:
+	print(n)
+
+for given range or to run loop for the given number of times:-
+iterate from 1 to 10
+for i in range(1,11):
+	print(i)
+
+2. while :  it is also used to iterate over a set of instructions.
+it continues to run until the given condition is true. if the condition is false,
+then it will exit the loop.
+
+var =value
+while condition:
+	code
+	increment/decrement
+
+
+n= int(input("Enter a number : ")
+
+print values from 1 to n
+i =1
+while i<=n:
+	print(i)
+	i+=1
+
+Nested Loops:-
+when we have multiple loops one inside another loop, then it is known as nested loops.
+we can use any loop structure to create a nested loop or we can use the combination of for and while loop as well.
+->  if outer loop condition is false, inner loop will never run.
+->  outer loop will be in waiting state until the inner loop continues to run. 
+->  Every time outer loop increments, inner loop will run from start to end.
+
+for i in range(1,11):
+	for j in range(1, 6):
+		print(i+" "+j)
+
+-> compiler will store 1 in i variable->  i=1     i<11
+-> compiler will store 1 in j variable->  j=1     j<6
+->  print   1 1
+->  increment j=   j+1=2  j<6 true
+->  print  1 2
+->  increment j=   j+1=3  j<6 true
+->  print  1 3
+-> 1 4
+-> 1 5
+-> incement j =  j+1=6  j<6 false
+-> exit j loop
+-> increment i=1+1=2    i<11  true
+--> compiler will store 1 in j variable->  j=1     j<6
+2 1
+2 2
+2 3
+2 4
+2 5
+---------------------------
+print matrix
+**********   10 stars
+*        *   2 stars, 8 spaces 
+*        *   2 stars, 8 spaces
+*        *   2 stars, 8 spaces
+*        *   2 stars, 8 spaces
+**********   10 stars
+rows = 6
+columns = 10
+
+for r in range(1,7):
+	for c in range(1,11):
+		if c==1 or c==columns or r==1 or r==rows:
+			print("*", end="")
+		else:
+			print(end=" ")
+	print()
+
+**********
+**********
+**********
+**********
+**********
+**********
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

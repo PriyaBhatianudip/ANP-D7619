@@ -1,0 +1,24 @@
+Dictionary in Python
+--------------------
+it is used to store key value pairs. here key should be unique but value can be duplicated. In a dictionary all the values are associated with its key. It is an unordered collection of data. it does not use any indexing.
+it is used to store heterogeneous data.
+
+ob = {key1:value1, key2:value2, .......}
+
+example
+ob = {"id":101, "name":"kk", "age":22, "salary":73000};
+
+print(ob.get("name"))
+ob["city"]="Delhi"
+ob["name"]="varun"
+
+get(): it returns the value of the given key. If the key is not present in the dictionary, then it returns the default value , which is mentioned along with key.
+ob.get(key, default)
+ob={"This":1}
+
+ob['this']= ob.get("This", 0)+1 = 0+1=1
+second time - this
+ob['this']= ob.get("This", 0)+1  = 2
+
+
+
