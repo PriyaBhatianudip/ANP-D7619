@@ -1,0 +1,118 @@
+Constructors
+-------------
+It is a special type of method and mechanism which is used to initialize an object when it is created.
+In Python, constructors are defined as
+__init__() method. It is the common form of constructor in python which is used to initialize objects as well as class level variables. 
+a constructor is automatically called, whenever we create an object to initialize the data members of an object.
+Syntax:
+class Classname:
+	def ___init__(self, var1, var2,...):
+		code
+
+=> In python we are not required to define or declare class-level variables in the class. we can directly create and initialize them in the constructor.
+
+Example:-
+class Student:
+	def __init__(self, name, age, course, marks):
+		self.name=name
+		self.age=age
+		self.course=course
+		self.marks=marks
+
+
+s1 = Student("Riya", 22, "Python", 88)
+s2 = Student("kk", 23, "Java", 87)
+--------------------------------------------
+self :  it refers to the current object. It helps python identify the object on which a method is called allowing each object to access and maintain its own data independently.
+
+self is not a keyword but it is actually a naming convention.  when a method is being called using an object, self keyword stores its reference to access the variable of that particular object.
+
+Inside the coding
+-> when we call a constructor to create an object.
+-> constructor creates a new reference into the memory with the variables which are declared inside the constructor and store this new reference into the self object. 
+-> when we start declaring variables usingthe self object, these variables are being created inside the new reference which self is containing. 
+->  after the variables are initialized and other tasks are completed, constructor return the refence stored in the self object to the given object.
+
+ob = Classname()
+-------------------------------------------
+Types of constructors in Python
+--------------------------------
+1. default constructor:  if we don't create a constructor in a class, then python creates a default constructor. It accepts no arguments other than the reference of the object and it creates the object without initializing any custom attributes.
+Example
+class student:
+	def display(self):
+		print("Hello Python")
+
+s1 = student()
+s2 = student()
+
+2. Non-Parameterized constructors
+---------------------------------
+A constructor which is not receiving any value as parameter is called a non-parameterized constructor. we can define code inside this constructor as well so that whenever an object is being created, it will be called and perform the given work.
+
+class student:
+	def __init__(self):
+		code
+		code
+3. Parameterized Constructor:
+------------------------------
+It accepts custom arguments passed by the programmer during object initialization along with self. this is used when we want to store different values in different object. 
+class student:
+	def __init__(self, name,age):	
+		self.name=name
+		self.age=age
+
+s1 = student("aa", 23)
+s2 = student("bb", 24)
+
+Concept:  
+default: to define default values for method or constructor parameter, we can use default option. If we are using default option with parameters or argument values, then it is not compulsory to pass values to that particular variable in method or constructor.
+To apply default parameters:-
+class student:
+	def __init__(self, name="Unknown", age=0):	
+		self.name=name
+		self.age=age
+
+s1 = student("aa", 23)
+s2 = student("bb", 24)
+s3 = student()
+	
+s1 = student("aa")
+s2 = student("",23)
+
+
+Constructor overloading
+------------------------
+Constructor overloading is when we are creating more than one constructor in a class which can have different type of parameters or different number of parameters. this concept is widely used in c++ and java. But Python doesn't allow constructor overloading. Instead it provides the concept of defining the default value. so that if user doesn't provide any value, default can handle it.
+
+------------------------------------------------
+Employee Salary Calculator
+Create an Employee class with:
+Employee ID
+Employee name
+Basic salary — default value ₹15,000
+Requirements:
+Initialize the attributes using a constructor.
+Create a method to calculate annual salary.
+Create a method to display employee details and annual salary.
+Create three employees with different salaries.
+----------------------------------------------------
+2. Create a Product class with:
+Product name — default value "Unknown"
+Price — default value 0
+Quantity — default value 1
+
+Requirements:
+Initialize all attributes using a constructor.
+Create a method to calculate the total cost.
+Create a method to apply a 10% discount when the total cost is greater than ₹5,000.
+Display the product name, price, quantity, total cost, discount, and final amount.
+create a menu method to provide user options to choose from.
+Create at least three product objects.
+
+
+
+
+
+
+  
