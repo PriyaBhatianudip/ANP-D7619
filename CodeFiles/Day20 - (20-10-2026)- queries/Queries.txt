@@ -1,0 +1,43 @@
+Question : What is _a , __a, __a__ in python?
+Answer
+_a  :  Single underscore :  it is a convention for non-public variables in python. Python doesn't prevents you from accessing this variable, it simply indicates that the variable is intended for internal use. 
+
+__a(double underscore) :  it is called named mangling. 
+Python changes the attribute name internally to  help prevent accidental name conflicts, especially in inheritance. 
+
+class Student:
+	def __init__(self):
+		self.__marks = 90
+
+	def display(self):
+		print(self.__marks)
+
+s1= Student()
+
+s1.display()
+
+print(s1._Student__marks)
+
+-------------------------------------------
+__a__:  double underscore before and after
+they are called dunder names. 
+They are used for python's special methods and attributes, like __init__, __str__, __len__
+
+-> __str__(): it is a special dunder method of python that defines the human-readable string representation of an object.
+it is automatically called when we use  print() method on an object. 
+when it is not overridden, then it prints the reference of the class. But if we override this function, then we can print any string output we want upon using print method to print object of the class.
+
+-----------------------------------------
+Q. Differentiate __ init__.py file and __init__() function?
+__init__() : it is a special dunder function of python, which is also treated as a constructor. It is automatically called whenever we create an object of a class. 
+it's basic work is to create and initialize a new reference and provide it to the object. 
+we can also override the __init__ method to define custom code inside it, which runs whenever we create a new object.
+
+__init__.py class: it is a python class used with packages. it helps in defining and initializing the packages. it resides inside the package directory.
+Whenever we import a package, this class gets initiated. 
+it is majorly used in python projects, especially in Django and flask.
+--------------------------------------
+
+
+
+

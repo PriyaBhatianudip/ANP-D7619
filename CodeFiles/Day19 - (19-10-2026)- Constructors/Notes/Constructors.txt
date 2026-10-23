@@ -101,14 +101,13 @@ Create three employees with different salaries.
 Product name — default value "Unknown"
 Price — default value 0
 Quantity — default value 1
-
 Requirements:
-Initialize all attributes using a constructor.
-Create a method to calculate the total cost.
-Create a method to apply a 10% discount when the total cost is greater than ₹5,000.
-Display the product name, price, quantity, total cost, discount, and final amount.
-create a menu method to provide user options to choose from.
-Create at least three product objects.
+->  Initialize all attributes using a constructor.
+->  Create a method to calculate the total cost.
+->  Create a method to apply a 10% discount when the total cost is greater than ₹5,000.
+->  Display the product name, price, quantity, total cost, discount, and final amount.
+-> create a menu method to provide user options to choose from.
+->  Create at least three product objects.
 
 
 

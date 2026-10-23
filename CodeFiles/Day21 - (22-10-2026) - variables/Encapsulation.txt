@@ -1,0 +1,51 @@
+Encapsulation :
+---------------
+->  wrapping up the data into a single unit.
+->  It combines data and methods that operate on that data within a class, while providing controlled access to that data.
+->  it is very important feature of Object oriented programming. 
+
+Access-Conventions in Python
+----------------------------
+1. public          -   var-name
+public attributes are those which can be accessed and modified directly from inside the class, outside the class and using objects as well.
+Example
+class Student:
+	def __init__(self, name, marks):
+		self.name=name
+		self.marks=marks
+Here name and marks are public variables.
+
+2. private-style   -   __name
+These attributes are declared inside a class and are private to that class as well. As it can't be accessed outside the class. According to python naming convention,  we define it using two underscores before the variable name.
+Example :   __x,  __name
+
+python applies name mangling to these names to reduce accidental access and naming conflicts, particularly in inheritance.
+class BankAccount:
+	def __init__(self, balance):
+		self.__balance = balance
+
+	def displayBalance(self):
+		print("Balance : ", self.__balance)
+
+a1 = BankAccount(70000)
+
+a1.displayBalance()
+
+# print("Balance : ", a1.__balance)  prints attribute error
+
+3. protected(convention) - _name
+These type of variables can only be accessed inside class and its sub-class(child class). It can be defined using the single underscore.  Example  _name, _salary
+
+class BankAccount:
+    def __init__(self, balance, minbalance):
+        self.__balance=balance
+        self._minbalance = minbalance
+
+    def displayBalance(self):
+        print("Balance : ", self.__balance)
+
+a1 = BankAccount(70000, 5000)
+
+a1.displayBalance()
+print("Minimum balance : ", a1._minbalance)
+# print("Balance : ", a1.__balance)

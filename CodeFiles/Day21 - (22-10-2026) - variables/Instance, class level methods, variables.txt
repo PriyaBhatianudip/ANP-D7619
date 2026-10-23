@@ -1,0 +1,75 @@
+Instance variables and class variables
+--------------------------------------
+Instance variables are associated with individual objects of a class. Each object can maintain its own separate value for these variables. 
+Instance variables are commonly initialized using the self keyword inside __init__() method. we can also create instance variables using self keyword in other methods as well.
+Example
+class Student:
+	def __init__(self, name, marks):
+		self.name=name
+		self.marks=marks
+class variables:  
+these variables are directly declared inside the class body. These variables are associated with a class. we can access them using the instance methods or objects but the value remain same for all of them. if there is any change in the value, then it will be reflected in the same way in all its objects.
+Example:
+class student:
+	collegename="ABC college"
+
+-------------------------------
+__dict__ :  this mechanism is inbuilt in python and is used to show the attributes of a class or an instance/object. 
+
+example:-
+s1.__dict__ : it will show the instance variables' values
+student.__dict__ :  it will show the class variables' values
+-------------------------------------
+Types of Methods:-
+-----------------
+1. instance methods  :  an instance method works with the data
+of a particular object. it takes self as the first parameter.
+Example:-
+class Student:
+	def __init__(self, name, marks):
+		self.name=name
+		self.marks=marks
+
+	def display(self):  # instance method
+		print("Name : ", self.name)
+		print("Marks :", self.marks)
+
+s1 = Student("aa", 77)
+s2 = Student("bb", 78)
+
+s1.display()
+s2.display()
+
+2. class methods :  it works with class-level data. It uses @classmethod decorator and  it takes cls as its first parameter.
+Example
+class Student:
+	collegename ="ABC College"
+
+	@classmethod
+	def setCollegeName(cls, name):
+		cls.collegename = name
+
+Student.setCollegeName("XYZ Collge")
+print(Student.collgename)
+
+3. static methods:  
+A static method is a utility function which is placed inside a class. It does not automatically receive cls or self.  it is defined using decorator @staticmethod
+
+class Student:
+	@staticmethod
+	def getGrades(marks):
+		if marks>=90 and marks<=100:
+			print("A Grade")
+		elif marks>=80 and marks<90:
+			print("B Grade")
+		elif marks>=70 and marks<80:
+			print("C Grade")
+		elif marks>=60 and marks<70:
+			print("D Grade")
+		elif marks>=50 and marks <60:
+			print("E Grade")
+		else:
+			print("Fail")
+
+Student.getGrades(89)
+
