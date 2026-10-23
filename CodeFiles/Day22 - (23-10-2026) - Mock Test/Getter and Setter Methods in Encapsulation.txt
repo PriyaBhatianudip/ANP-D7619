@@ -1,0 +1,30 @@
+Getter and Setter Methods in Encapsulation
+-------------------------------------------
+In python, getter and setter methods are used to access and modify the private data members of a class in a controlled manner.
+Getter methods are used to return or read a value of a variable from the class. Each of the members of  a class have their specific getter method.
+Setter Methods are used to set or save the value of a variable in the class. Each attribute has their specific setter method in the class.
+
+class Employee:
+	def __init__(self, acno=0, name=None, password=None):	
+		self.__acno = acno
+		self.__name = name
+		self.__password=password
+
+	def getAcno(self):	
+		return self.__acno
+
+	def getName(self):
+		return self.__name
+
+	def getPassword(self):
+		return self.__password
+
+	def setAcno(self, acno);
+		self.__acno=acno
+
+	def setName(self, name):
+		self.__name=name
+
+	def setPassword(self, password):
+		self.__password = password
+

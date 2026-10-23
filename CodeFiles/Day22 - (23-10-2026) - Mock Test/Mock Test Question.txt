@@ -1,0 +1,29 @@
+Q .Explain the find() and index() methods for searching substrings in a string.
+Q. How can you use the 'in' and 'not in' operators to check for membership in
+Python?
+Q.How do you remove an element from a list in Python?
+Q. How do you concatenate or combine two tuples?
+Q. Explain the break and continue statements in the context of a while loop.
+Q. Explain the difference between / and // operators in Python.
+Q. What happens if the condition in a while loop is initially false?
+Q.  How do you remove an item from a dictionary in Python?
+Q. What is the purpose of the str() function in Python, and when might you use it?
+Q. Explain the difference between mutable and immutable variables in Python.
+Q. How do you perform the union of two sets?
+Q. What is the difference between sort() and sorted() for sorting a list?
+Q. What is the difference between append() and extend() methods for adding elements to a list?
+Q. Explain the * operator with lists.
+Q. Explain the difference between using pop() and popitem() to remove items from a dictionary.
+Q. How can you check if a key exists in a dictionary?
+Q. What is the capitalize() method used for, and how does it work?
+Q. What is the purpose of comments in Python code, and why are they
+important?
+Q. Differentiate between an expression statement and an assignment
+statement in Python.
+Q. How do you count the number of occurrences of a specific element in a tuple?
+------------------------------------------------------------------
+Write a Python program that accepts a student's name, roll number, and marks in five subjects. Store the student's details in a tuple, subject names in a list, and subject-wise marks in a dictionary. Use a set to store unique subject names. The program should calculate the total and average marks, display the subjects in which the student scored above 75 marks, identify failed subjects (marks below 40), and display the student's name in reverse order.
+
+
+
+
