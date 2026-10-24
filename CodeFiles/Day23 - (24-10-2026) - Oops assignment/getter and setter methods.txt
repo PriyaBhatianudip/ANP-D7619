@@ -1,0 +1,34 @@
+getter and setter methods
+-----------------------
+getter methods are used to get a value of a private variable from the class.
+setter methods are used to set the value of a private variable in a class.
+Usually whenever we create an entity class, we keep variables of that class private to secure the data and to not provide direct access. Now if anybody wants to access the values of these variables, then we can do it using the getter and setter method.
+->  every private variable of a class can have separate getter and setter method.
+
+class Employee:
+	def __init__(self):
+		print("Object is initialized...")
+		self.__id=0
+		self.__name =""
+		self.__salary=0.0
+
+	def setId(self, id):
+		self.__id=id
+	
+	def setName(self, name):
+		self.__name=name
+
+	def setSalary(self,salary):
+		self.__salary=salary
+
+	def getId(self):
+		return self.__id
+
+	def getName(self):
+		return self.__name
+
+	def getSalary(self):
+		return self.__salary
+
+
+	

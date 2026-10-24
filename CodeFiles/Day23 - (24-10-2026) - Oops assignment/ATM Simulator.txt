@@ -1,0 +1,26 @@
+ATM Simulator
+--------------
+-> create class User:
+	-> __accountno
+	-> __username
+	-> __password
+	-> __balance
+	-> setter and getter methods for all the 	variables 
+->create a class BankAccounts:
+	-userlist =[]
+	methods:-
+	registerNewUser()
+	withdrawAmount()
+	depositAmount()
+	changePassword()
+	showAccountDetails()
+	menu()
+		1. withdraw Amount
+		2. deposit Amount
+		3. change Password
+		4. show Account Details
+		5. Register New user
+		6. Exit
+	login()
+		->  input id and password from user
+		and provide menu if the user is 		successfully authenticated
