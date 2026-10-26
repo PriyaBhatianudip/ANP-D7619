@@ -1,0 +1,78 @@
+Inheritance In Python
+----------------------
+Why the idea of inheritance came in OOPs?
+Code Reusability
+code extensibility
+cleaner design
+less duplications
+maintainability
+
+Example
+Nokia Phone(button phones) - voice call, sms, games etc.
+Qwerty Phones -  voice call but with picture.
+Smart phones - voice call but with video call option.
+----------------------------------
+Inheritance
+-----------
+It is one of the most important concept of Object oriented programming. It is used to inherit the properties and behaviours of one class into another class. 
+The class which is getting inherited becomes the parent/super/base class.
+The class who is inheriting becomes the child/derived class/sub class.
+Inheritance follows the concept of IS-A relationship. which means one class is a child class of another. 
+Syntax:-
+=> to create a parent class, nothing special class.
+class Parent:
+	variables
+	methods
+=> to create a child class, we need to define the name of parent class with subclass declaration.
+class Child(Parentclassname):
+	variables
+	method
+
+--------------------------------------------------
+Types of Inheritance:  there are 5 types of inheritance in Python.
+Single Inheritance :  It is applied when we have only one parent class and one child class and the child class can not be inherited by any other class.
+   Syntax:-
+    class A:
+       properties of class A
+    class B(A):
+       properties of Class B
+Multiple Inheritance:  it is applied when we have multiple parent classes of one single child class. Here child class will inherit the properties of both of the parent classes. But both parent can't inherit each other's properties.
+class A:
+   properties...
+class B:
+   properties....
+class C(A, B):
+   properties
+
+Multi-Level : in this strategy, we have multiple classes which are inheriting each other. Like class C is the child of Class B, and class B is the child of class A.
+class A:
+    properties...
+class B(A):
+    properties....
+class C(B):
+     properties
+
+Hierarchical : In this strategy, a parent can have multiple child classes. it is just like a tree structure where everything is related to the root class. class b and c can use the properties of Class A, but for each other, they will not share any relationship. 
+  Example:- 
+	class A:
+		properties...
+	class B(A):
+		properties....
+	class C(A):
+		properties
+
+5. Hybrid :  It is the combination of two or more inheritance types. It can be a combination of hierarchical and multi-level and multiple inheritance as well
+Example:-
+Class X:
+	properties
+class A(X):
+	properties...
+class B(A):
+	properties....
+class C(A):
+	properties
+class D(B, C):
+	properties...
+
+
+

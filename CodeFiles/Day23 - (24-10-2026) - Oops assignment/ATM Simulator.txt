@@ -23,4 +23,43 @@ ATM Simulator
 		6. Exit
 	login()
 		->  input id and password from user
-		and provide menu if the user is 		successfully authenticated
+		and provide menu if the user is 		
+		successfully authenticated
+
+---------------------------
+Flow of the program
+=> Task 1
+-> create class User:
+	-> __accountno
+	-> __username
+	-> __password
+	-> __balance
+	-> setter and getter methods 
+Task 2
+-> create class BankAccounts
+- create an empty list in class
+- create methods:-
+	registerNewUser(self)
+	-> create an object of user class
+	-> input values from user and set them in the user class variables 	   using the setter methods
+	-> withdrawAmount(self)
+	  -> input an amount from user, compare this amount with balance.
+             if amt>balance, then show user an error message for	 	     insufficient balance, otherwise allow user to withdraw amount 
+	-> depositAmount()
+	-> changePassword()
+	-> showAccountDetails()
+	-> login()
+	-> menu()
+		1. withdraw Amount
+		2. deposit Amount
+		3. change Password
+		4. show Account Details
+		5. Exit
+	-> mainmenu()
+		1. Login -> call login(), if successful, then call menu 		   method, if false then provide user 3 attempts
+		2. New User? Register  ->call registerNewUser()
+		3. Exit -> exit from the program
+
+Program will start from here
+outside of all the classes
+create an object of BankAccounts class and call the mainmenu() method
