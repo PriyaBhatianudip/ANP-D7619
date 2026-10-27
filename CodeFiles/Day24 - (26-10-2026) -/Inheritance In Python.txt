@@ -73,6 +73,24 @@ class C(A):
 	properties
 class D(B, C):
 	properties...
+----------------------------------------------------
+Questions:-
+1. Create a Person class with name and age attributes. Create a Student class that inherits from Person and adds roll_no. Display all details using a Student object.
 
+2. Create an Employee class with employee_id and name. Create a Salary class that inherits from Employee and adds basic_salary and bonus. Display the employee details and calculate the total salary.
 
+3. Create three classes:
+- Student: stores name and roll number.
+- Marks: inherits from Student and stores marks in three subjects.
+- Result: inherits from Marks and calculates total marks and percentage.
+Display the student's details, total marks, and percentage.
 
+4. Create a Camera class with a method to capture photos and a MusicPlayer class with a method to play music. Create a Smartphone class that inherits from both. Demonstrate both functionalities.
+
+5. Create a ProductInfo class containing product name and price. 
+Create a Discount class containing discount percentage. 
+Create an OnlineOrder class inheriting from both and calculate the final price after applying the discount.
+
+6. Create a Person class. Derive Student and Faculty from Person. Then create a ResearchAssistant class that inherits from both Student and Faculty. Display the details available from the parent classes.
+
+7. Create a Ticket class containing passenger name and ticket number. Derive TrainTicket and FlightTicket from Ticket. Add train number to TrainTicket and flight number to FlightTicket. Display the details of both ticket types.
