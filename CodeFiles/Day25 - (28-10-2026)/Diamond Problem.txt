@@ -1,0 +1,33 @@
+Diamond Problem
+----------------
+-> when we have multiple inheritance or hybrid inheritance, the diamond problem occurs. When we have multiple parent classes, we have similar variables or methods. In these cases when child class call or uses the variable or method with the same name, then diamond problem occurs.  
+
+Imagine a smart home device that has features from two different systems:
+•	VoiceAssistant provides voice-control functionality.
+•	SmartDevice provides device-control functionality.
+•	SmartSpeaker inherits from both classes.
+
+create startWork() method in both of the parent classes to start their particular work. 
+Create an object of SmartSpeaker class, and call method startWork()
+----------------------------------
+Constructors in Inheritance
+---------------------------
+In python, we use __init__() method to define a constructor. In inheritance, constructors help attributes to define in both the parent and child class.
+When we create an object of an inherited class, the parent class constructor is also called along with the child class constructor. In this case, the order of calling constructors can be understood using this example
+		
+		A->B->C->D
+
+d = D()
+->  if we create an object of D class, then which constructors will be called? and in which sequence?
+->  if child class constructor is being called, then do the parent class constructor will be automatically called or not?
+Case 1:  Both parent and child does not have any init method. In these cases default behaviour of classes from the object class is followed.
+
+Case 2:  If parent has an init method, but child class doesn't have any init method. Then python automatically calls the parent class init method.
+
+Case 3: if Both of the classes has init() method, then child class constructor will be executed. parent init method will not be called, unless we provide a command to call it from the child class constructor or method.
+
+Case 4:  If both of the classes has parameterized constructors, then what will happen?
+-> if parent class constructor is initialized , but child class has no constructor, then parent class constructor will be called and will be initialized.
+->  Both of the classes has their own init method with parameters:-
+if we create the object of child class, then by default its init method will be called and its variables will be initialized. but parent class constructor will not be called.
+

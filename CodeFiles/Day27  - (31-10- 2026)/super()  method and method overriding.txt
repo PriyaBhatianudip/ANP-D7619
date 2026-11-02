@@ -1,0 +1,84 @@
+super():  this function is used to access methods and attributes of the parent class, then we can use the super() method.  
+It is useful when we apply method overriding, because then we have similar method or variables in the parent and child class. these type of variables and methods can be accessed using the super() method in the child class. 
+super() is an inbuilt method that returns a temporary object of the superclass, which allows a child class to access init, methods, variables of its parent class.
+1. to call the parent class constructor
+	super().__init__(v1, v2, v3,....)
+
+2. to call the parent class method
+	super().methodname(parameters)
+
+3. to access parent class variable
+	super().varname
+------------------------------------
+Method Overriding
+-----------------
+When we have same method in parent and child both classes, then it is known as method overriding. 
+when we create an object of the child class, then only child class method is accessed. because child class method has same definition as parent class method, so it overrides the parent class method. 
+It is useful when we want extend the functionality of a parent class method.
+class Calculator:
+	def add(self, a, b):
+		print("Sum : ", a+b);
+
+class Calc(Calculator):
+	def add(self, a, b):
+		if a<=0 or b<=0:
+			print("Negative values can't be added!")
+		else:
+			print("Sum : ", a+b)
+
+ob = Calc()
+ob.add(33,132)
+--------------------------------------------------
+Q1. Create a parent class ElectronicDevice with a method switch_on().
+
+Create two child classes:
+- Laptop
+- Mobile
+Override the method and use super() to display the common functionality along with device-specific messages.
+
+-----------------------------------------------------
+Electronic Device(attributes, methods- showDetails, switchon,switchoff)
+       			|
+  		   SmartDevice
+			|
+	----------------------------------------
+	|		|			|
+   SmartTV         Smart AC    		 SmartSpeaker
+a
+Q2.  create a super parent ElectronicDevice 
+Create a parent class SmartDevice with the following methods:
+- switch_on()   in ElectronicDevice
+- connect_wifi() in ElectronicDevice
+- disconnect_wifi() in ElectronicDevice
+- show_status()  in SmartDevice
+Create Attributes in ElectronicDevice:
+- device_id
+- device_name
+- brand
+- price
+- status (ON/OFF)
+Create three child classes:
+1. SmartTV
+2. SmartAC
+3. SmartSpeaker
+Requirements:
+1. Override the switch_on() method in all three child classes.
+2. Use super() to display the common startup message.
+3. Each device should display its own startup process.
+4. Override show_status() to display device-specific information.
+Expected behaviour:
+Device	Device-specific functionality
+SmartTV	Loading Android TV and checking display
+SmartAC	Initializing cooling system and checking temperature
+SmartSpeaker	Initializing audio system and connecting voice assistant
+
+Bonus tasks:
+- Add a change_mode() method in each child class.
+- SmartTV should support Cinema and Sports modes.
+- SmartAC should support Cool, Dry and Fan modes.
+- SmartSpeaker should support Music and Podcast modes.
+
+
+
+
+

@@ -1,0 +1,182 @@
+Abstraction In Python
+----------------------
+it hides the complex details and provides only the necessary parts of an application to the user. 
+Abstraction is the process of hiding implementation details and showing  only the functional parts to the user. 
+Abstraction can be applied to 
+1. abstract class : These types of classes contain only one or more abstract methods. 
+->  we can't create an object of abstract class.
+-> it acts as a blueprint for child classes. it tells child classes which methods to implement.
+-> All the child classes should implement/ override the abstract methods of the parent class.
+
+2. abstract method : An abstract method is a method that is declared in the parent class but does not contain any actual implementation.
+The child class provides its implementation.
+We can declare an abstract method using the @abstractmethod decorator.
+
+3. ABC(Abstract Base class) : it is used to achieve data abstraction by defining a common interface for its subclasses. it can't be instantiated directly and serves as a blueprint for other classes. ABC class is an inbuilt interface of python which enables our classes to become abstract.  To create an abstract class in python we need to treat ABC as the parent class of our class.
+To use it as a parent class, we need to import it from the python library.
+
+from abc import ABC, abstractmethod
+
+
+4. @abstractmethod decorator  : to define the abstract method in python.
+
+Example:-
+from abc import ABC, abstractmethod
+
+# to create an abstract class:-
+class Shape(ABC):
+    @abstractmethod
+    def calculateArea(self):
+        pass
+
+    @abstractmethod
+    def calculatePerimeter(self):
+        pass
+    # pass keyword can be used to define an empty method or empty class as well
+class Rectangle(Shape):
+    def calculatePerimeter(self):
+        l = int(input("Enter the length of the rectangle: "))
+        b = int(input("Enter the width of the rectangle: "))
+        print("Perimeter: ",2*(l+b))
+
+    def calculateArea(self):
+        l = int(input("Enter the length of the rectangle: "))
+        b = int(input("Enter the width of the rectangle: "))
+        print("Area : ", l*b)
+
+class Square(Shape):
+    def calculateArea(self):
+        side = int(input("Enter side length: "))
+        print("Area of Square: ", side*side)
+
+    def calculatePerimeter(self):
+        side = int(input("Enter side length: "))
+        print("Perimeter of Square: ", 4*side)
+
+
+rect = Rectangle()
+sqr = Square()
+rect.calculateArea()
+rect.calculatePerimeter()
+sqr.calculatePerimeter()
+sqr.calculateArea()
+
+---------------------------------
+Need of Abstraction
+-------------------
+We can achieve many things using normal Python classes without using abstract classes. So, why do we need abstraction?
+Answer:
+It is introduced to enforce a common structure, establish rules for child classes, and prevent incomplete implementations.
+The important point is that abstraction is not introduced because Python cannot perform the same operations using normal classes. it is introduced to enforce common structure and rules.
+
+Assignment
+-----------
+Banking Management System
+1. Problem Statement
+A bank wants to develop a banking application that supports different types of bank accounts.
+
+The bank provides three types of accounts:
+1. Savings Account
+2. Current Account
+3. Salary Account
+All accounts should provide common banking operations, but the implementation of certain operations will differ depending on the account type.
+
+For example:
+- Every account should support depositing money.
+- Every account should support withdrawing money.
+- Every account should provide balance enquiry.
+- Withdrawal rules may differ for different account types.
+Your task is to develop this application using Abstraction in Python.
+
+2. Functional Requirements
+Part A: Create an Abstract Class
+Create an abstract class named BankAccount.
+
+It should contain the following:
+
+Attributes:
+- account_number
+- account_holder
+- balance
+Abstract methods:
+Method	Description
+deposit(amount)	Deposit money into the account
+withdraw(amount)	Withdraw money from the account
+calculate_interest()	Calculate interest based on account type
+
+Concrete methods(non abstract methods):
+Method	Description
+check_balance()	Display the current account balance
+display_details()	Display account information
+
+Part B: Create Child Classes
+Create three child classes inheriting from BankAccount.
+
+1. SavingsAccount
+Rules:
+- Minimum balance should be ₹1,000.
+- Interest rate should be 4% annually.
+- Withdrawal should not reduce the balance below ₹1,000.
+
+2. CurrentAccount
+Rules:
+- No minimum balance requirement.
+- Interest rate should be 0%.
+- Allow withdrawal as long as sufficient balance is available.
+
+3. SalaryAccount
+Rules:
+- Minimum balance should be ₹0.
+- Interest rate should be 5% annually.
+- Withdrawal should not exceed the available balance.
+
+3. Expected Program Output
+Your application should produce output similar to this:
+
+========== BANKING SYSTEM ==========
+1. Savings Account
+2. Current Account
+3. Salary Account
+
+Enter account type: 1
+Enter Account Number: 101
+Enter Account Holder: Rahul
+Enter Initial Balance: 10000
+
+Account Created Successfully!
+
+========== ACCOUNT DETAILS ==========
+
+Account Number: 101
+Account Holder: Rahul
+Account Type: Savings Account
+Current Balance: 10000
+
+========== BANKING OPERATIONS ==========
+
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Calculate Interest
+
+Enter choice: 2
+
+Enter withdrawal amount: 9500
+
+Insufficient Balance!
+Minimum balance of 1000 must be maintained.
+
+Additional Requirements
+
+Students must also implement the following:
+1. If the deposit amount is zero or negative, display an appropriate error.
+2. If the withdrawal amount is greater than the available balance, display an error.
+3. Calculate annual interest using:
+
+Interest = (Balance * Rate)/100
+
+
+4. Use constructors to initialize account details.
+5. Use method overriding in child classes.
+6. Do not allow the creation of an object of the abstract class BankAccount.
+
