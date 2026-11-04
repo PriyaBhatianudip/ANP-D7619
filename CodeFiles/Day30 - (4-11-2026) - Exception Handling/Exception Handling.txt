@@ -1,0 +1,88 @@
+Exception
+-------------------
+Exception in python is a special object which represents an error that occurs during the execution of program. 
+We have multiple errors like:-
+Compile time errors
+	-> Syntax Error
+	-> Indentation error
+-> Runtime errors
+	-> logical errors/ IO errors
+
+age = int(input("Enter age : "))   ->  24 years
+
+--------------------------------------
+Exception Handling
+-------------------
+It is a mechanism of python which is used to handle runtime errors so that the normal flow of the program execution does not terminate unexpectedly.
+We can get multiple type of runtime errors:-
+->  division by zero
+->  Accessing an invalid index
+->  Opening a file that does not exist
+->  converting an invalid string into an integer
+----------------------------------------------
+Python provides some keywords/blocks  to handle runtime exceptions:-
+1. try block :  it contains code which can generate an exception
+2. except :  it is used to handle exceptions
+3. else :  it executes when no exception occurs.
+4. finally :  it executes whether there is an exception or not.
+5. raise :  it is used to explicitely raise an exception.
+In certain situation, you want to throw an exception manually.
+
+--------------------------------------
+try:
+	code which can generate an exception
+except:
+	code in case of exception
+
+or
+try:
+	code which can generate an exception
+except ErrorName:
+	code in case of exception
+
+=> Suppose you want to get internal exception messages as well, when the exception is coming, we can also define an object of the exception class, using which we can get the internal exception message as well.
+try:
+	code which can generate an exception
+except ErrorName as obname:
+	code in case of exception
+
+--------------------------------------------
+else :
+it gets executed when no exception occurs inside the try block.
+Syntax:
+	try:
+		code which can generate an exception
+	except:
+		code to be executed in case of exception
+	else:
+		code which can be executed when there is no 			exception
+--------------------------------------------
+finally :  
+it is used to run code which must be running whether there is an exception or not.
+this block always executes after the try-except-else block executes and complete
+
+Sometimes, even if an error occurs, we need to perform certain operations such as:-
+	-> close a file
+	-> close a database connection
+	-> to release resources after a particular task is completed
+	-> for logging details of transactions.
+	-> performing cleanup operations
+
+	try:
+		code which can generate an exception
+	except:
+		code to be executed in case of exception
+	else:
+		code which can be executed when there is no 			exception
+	finally:
+		code
+
+or 
+	try:
+		code which can generate an exception
+	except:
+		code to be executed in case of exception
+	finally:
+		code
+
+
