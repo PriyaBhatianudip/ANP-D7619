@@ -1,0 +1,85 @@
+Assignment:  Console Notepad Application
+-----------------------------------------
+Project Description
+Develop a Console-Based Notepad Application in Python that allows users to create, read, modify, append and delete text files.
+The application should provide a menu-driven interface where users can select different file operations.
+
+ConsoleNotepad/
+│
+├── main.py
+│
+├── notes/
+│   ├── diary.txt
+│   ├── python.txt
+│   └── ideas.txt
+│
+=> create a Main Menu
+When the program runs, display the following menu:
+========================================
+          MY CONSOLE NOTEPAD
+========================================
+
+1. Create New File
+2. Write Content into File
+3. Read File
+4. Append Content
+5. Search Text in File
+6. Replace Text in File
+7. Count Words and Characters
+8. Delete File
+9. Display All Files
+10. Rename File
+11. Exit
+
+========================================
+Enter your choice:
+--------------------------------------------------------------------------
+=> Functional Requirements
+Task 1: Create New File
+- Accept a filename from the user.
+- Create a new text file.
+- If the file already exists, display an appropriate message.
+- Use x mode.
+Task 2: Write Content into File
+- Accept the filename.
+- Accept multiple lines of text from the user.
+- Continue accepting input until the user enters END.
+- Save the content in the file.
+- Existing content should be overwritten.
+Task 3: Read File
+- Accept the filename.
+- Display the complete contents of the file.
+- If the file does not exist, display an error message.
+Task 4: Append Content
+- Accept the filename.
+- Accept additional text from the user.
+- Append the content without deleting existing data.
+- Support multiple lines until the user enters END.
+Task 5: Search Text in File
+- Accept a filename.
+- Ask the user to enter a word or phrase.
+- Check whether the text exists in the file.
+- Display whether it was found.
+- If found, display the line numbers where it occurs.
+Task 6: Count Words and Characters
+Accept a filename and calculate:
+- Total number of lines.
+- Total number of words.
+- Total number of characters.
+- Total number of spaces.
+Task 7: Replace Text
+- Accept the filename.
+- Ask which word or phrase needs replacement.
+- Ask for the replacement text.
+- Replace all occurrences.
+- Save the updated content in the same file.
+Task 8: Delete File
+- Accept the filename.
+- Ask for confirmation before deleting.
+- Delete the selected file.
+- Display an appropriate message.
+Task 9: Display All Files
+- Display all .txt files available in the current folder.
+- Use the os module.
+Task 10: Exit
+- Terminate the application.

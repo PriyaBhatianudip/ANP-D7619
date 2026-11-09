@@ -1,0 +1,22 @@
+raise keyword :  it is used to manually raise an exception in the program. Developers can use raise keyword to avoid unwanted situations. Whenever a raise condition is encountered in the program, it looks for the appropriate except block and it doesn't find any except block, then it raises an exception.
+
+Syntax:
+try:
+	if condition:
+		raise ErrorClassName("error message")
+except ErrorClassName as ob:
+	code
+-------------------------------------------
+Custom Exception
+-----------------
+it is a user defined exception class that can be created by inheriting the Exception class of Python. It can be used to handle special exception cases which a developer finds to address in a particular project.
+Syntax:
+
+class Exceptionclassname(Exception):
+	def __init__(self, message):
+		super().__init__(message)
+		
+
+
+
+

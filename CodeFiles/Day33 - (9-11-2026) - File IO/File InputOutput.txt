@@ -1,0 +1,50 @@
+File Input/Output
+-----------------
+it is used to read and write data into the files. In python, there are multiple ways to read or write data into the permanent storage.
+Methods used in file handling:-
+1. open()  : to open a file for reading or writing data, we can use the open method. We need to define the mode which we require to use while defining the open method.
+ob = open("filename", "mode")
+
+2. read() :  to read data from the file.
+	fileob.read() : it returns all the data. 
+	fileob.read(intvalue)
+
+3. write() :  to write data into the files.
+4. close(): it is used to close and delete the object of the file. 
+---------------------------------------
+Inbuilt methods of file Input/Output
+1. using with statement : open() 
+--------------------------------
+Python provides another way to open a file, where we define it using the 'with' statement. if we are opening a file using with statement, then we don't need to close this file, as the file is being opening inside with statement block, file will be closed, once we get out of the block. 
+Syntax:
+	with open('filename', 'mode') as fileob:
+		code
+		code
+		
+	normal code
+2. readline(): : it is also used to read data from the file, but it reads data line by line.
+Syntax:
+	fileob.readline()
+
+3. readlines(): to read all the lines. it returns lines in the form of list. 
+
+Syntax:
+	fileob.readlines()
+
+
+-----------------------------
+append options:
+it is also used for writing data into the file, but it will not overwrite the data. it will add new data after the existing data.
+Its mode:   a, a+, ab, ab+
+We can use the write() method to write data in the append mode as well.
+
+4. os.path.exists() :  it is used to check whether a file exists in the given path or not. it returns true, if it finds the file, otherwise it returns false.
+Syntax:
+	os.path.exists('filename')
+
+5. tell(): it tells us about the current cursor position in a file. Python maintains a file pointer that indicates the current position  in a file.
+Syntax :  fileob.tell()
+
+6. seek() : it is used to move the file pointer to the specified position. 
+syntax:
+	fileob.seek(position)

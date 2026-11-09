@@ -1,0 +1,45 @@
+Provide me the code for the Mini Project.
+Online Shopping Cart
+Intermediate
+Develop an online shopping cart that calculates the final bill.
+-> Create a dictionary to store product information:-
+products = {
+    101: ("Laptop", 55000),
+    102: ("Mouse", 500),
+    103: ("Keyboard", 1200),
+    104: ("Monitor", 12000)
+}
+Requirements:
+1. Accept a product ID from the user.
+2. Accept the quantity.
+3. Calculate the total price.
+4. Handle KeyError for an invalid product ID.
+5. Handle ValueError for invalid quantity.
+6. Use else to display the bill.
+7. Use finally to display "Shopping session completed".
+
+Expected Output
+
+Enter product ID: 102
+Enter quantity: 3
+
+Product: Mouse
+Price: 500
+Quantity: 3
+Total Amount: 1500
+
+Shopping session completed
+
+try:
+	code
+	code...
+	...
+except KeyError:
+	code
+	code
+except ValueError:
+	code
+	code
+finally:
+	code
+

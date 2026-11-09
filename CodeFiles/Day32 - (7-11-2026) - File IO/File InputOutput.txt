@@ -1,0 +1,51 @@
+File Input/Output
+------------------
+It allows us to read or write data into files. 
+-> reading data from the files -  output
+-> writing data into the files - input
+For these operations, python provides us many inbuilt functions:-
+1. read() :  it helps us to get data from  a file. 
+Syntax :
+	data = fileob.read()
+2. write(): it is used to write data into a file. it is used to save data into a file.
+
+Syntax :  
+data ="
+fileob.write(data)
+fileob.write("hello")
+
+*data is the value which we want to store into the file
+
+3. open() :  it opens a file in the given modes, either read, write, append modes.
+Syntax: 
+ob = open("filename.ext", "mode")
+mode: what operations we want to perform on our files.
+1. read   
+  -  r(read only) , 
+  -  r+(read and write), 
+  -  rb(read binary)- it is useful for       reading a binary file which also includes the audio, video, pdf files etc., 
+  -  rb+(read and write binary) 
+
+2. write
+	-  w (write only): create a new file or overwrites an existing file.
+	-  w+ :  read and write both but  it reads the data from the beginning and overwrites the existing content.
+	- wb :  it is used for writing into a binary file
+	- wb+ : read and write both operations
+
+3. append :  it is also used as write operation but it will not overwrite the data. it will keep the existing data and will add the new data at the end of the file.
+    - a(append only)
+    - a+  append and read
+    - ab  append a binary file
+    - ab+  append and read a binary file.
+
+4. close():  it closes file after we have performed the relevant operations over the data. 
+---------------------------------------------------------------
+Q1. Write a Python program that accepts the following details from the user and stores them in personal.txt:
+- Name
+- Age
+- City
+- Qualification
+Use write() to store the information, with each field on a separate line.
+
+Q2. Exercise 3: Multiplication Table
+Accept a number from the user and generate its multiplication table. Store the table in table.txt.
