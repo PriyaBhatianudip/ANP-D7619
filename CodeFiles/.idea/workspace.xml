@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ceac26c1-b3b3-4638-8112-bbecffddb2a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Day35 - (13-11-2026)  - handling json and xml data/jsondemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotpadDemo.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PriyaBhatianudip&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PriyaBhatianudip/ANP-D7619.git&quot;,
+    &quot;accountId&quot;: &quot;725ebe33-f8c5-431d-8ebc-af658267e63b&quot;
+  }
+}</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0634465760613638" />
+      <entry key="MS500" value="1.725335619517741" />
+      <entry key="S2" value="2.61954032605156" />
+      <entry key="S5" value="3.5537683057303244" />
+      <entry key="S10" value="4.871881720636669" />
+      <entry key="S30" value="7.667682991560678" />
+      <entry key="S60" value="9.06110543183298" />
+      <entry key="M2" value="9.951204897028154" />
+      <entry key="M5" value="11.204289178721357" />
+      <entry key="M10" value="15.742372115763985" />
+      <entry key="M15" value="22.370350557631426" />
+      <entry key="M30" value="48.167479163183685" />
+      <entry key="H1" value="116.28173931496038" />
+      <entry key="H2" value="272.89547103336895" />
+      <entry key="H4" value="534.8016620154673" />
+      <entry key="D1" value="1143.634887154038" />
+      <entry key="W1" value="1330.2363692229233" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.5660976854559992E-234" />
+      <entry key="S5" value="3.0055747883949684E-94" />
+      <entry key="S10" value="1.733659363426094E-47" />
+      <entry key="S30" value="2.588140943379648E-16" />
+      <entry key="S60" value="1.6087700094729655E-8" />
+      <entry key="M2" value="1.2683729796320978E-4" />
+      <entry key="M5" value="0.027633682615416856" />
+      <entry key="M10" value="0.1693832570468825" />
+      <entry key="M15" value="0.3293689846204339" />
+      <entry key="M30" value="0.9575601305002047" />
+      <entry key="H1" value="3.2834889151840363" />
+      <entry key="H2" value="9.20119602459731" />
+      <entry key="H4" value="19.138685205658756" />
+      <entry key="D1" value="43.02945282042693" />
+      <entry key="W1" value="50.58231432247683" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9642980585992468" />
+      <entry key="MS500" value="1.686706001648334" />
+      <entry key="S2" value="2.5549828622622854" />
+      <entry key="S5" value="3.405489596495453" />
+      <entry key="S10" value="4.683267364242495" />
+      <entry key="S30" value="7.510113339629844" />
+      <entry key="S60" value="8.956051714066701" />
+      <entry key="M2" value="9.890066443651438" />
+      <entry key="M5" value="11.203937929205308" />
+      <entry key="M10" value="15.894003427739449" />
+      <entry key="M15" value="22.68438583035467" />
+      <entry key="M30" value="49.11030698893311" />
+      <entry key="H1" value="119.54857404903768" />
+      <entry key="H2" value="282.07749418142686" />
+      <entry key="H4" value="553.9214323123834" />
+      <entry key="D1" value="1186.6574985575503" />
+      <entry key="W1" value="1380.8175432811847" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3L5NT4fITqcj9IBfg3EjVCC0GsF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Calculator.executor": "Run",
+    "Python.EmpManagement.executor": "Run",
+    "Python.EmployeeManagemment.executor": "Run",
+    "Python.Q2.executor": "Run",
+    "Python.Q6.executor": "Run",
+    "Python.Singledemo.executor": "Run",
+    "Python.SmartDeviceDemo.executor": "Run",
+    "Python.abstractdemo.executor": "Run",
+    "Python.aggregatedemo.executor": "Run",
+    "Python.appenddata.executor": "Run",
+    "Python.case1.executor": "Run",
+    "Python.compositiondemo.executor": "Run",
+    "Python.diamonddemo.executor": "Run",
+    "Python.elseblockdemo.executor": "Run",
+    "Python.encapdemo.executor": "Run",
+    "Python.exceptiondemo.executor": "Run",
+    "Python.exceptionraisedemo.executor": "Run",
+    "Python.finallydemo.executor": "Run",
+    "Python.functionsdemo.executor": "Run",
+    "Python.inheritancedemo.executor": "Run",
+    "Python.jsondemo.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.parameterizedconst.executor": "Run",
+    "Python.readdemo.executor": "Run",
+    "Python.writedemo.executor": "Run",
+    "Python.writemultipledemo.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "E:/Anudip Batches/ANP-D7619/CodeFiles/Day26- (30-10-2026)/Day32 - (7-11-2026) - File IO",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Anudip Batches\ANP-D7619\CodeFiles\Day26- (30-10-2026)\Day32 - (7-11-2026) - File IO" />
+      <recent name="E:\Anudip Batches\ANP-D7619\CodeFiles\Day30 - (4-11-2026) - Exception Handling" />
+      <recent name="E:\Anudip Batches\ANP-D7619\CodeFiles\Day24 - (26-10-2026) -" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Anudip Batches\ANP-D7619\CodeFiles\Day33 - (9-11-2026) - File IO" />
+      <recent name="E:\Anudip Batches\ANP-D7619\CodeFiles" />
+      <recent name="E:\Anudip Batches\ANP-D7619\CodeFiles\Day28 - (2-11-2026) - Abstraction\PaymentDemo" />
+      <recent name="E:\Anudip Batches\ANP-D7619\CodeFiles\Day28 - (2-11-2026) - Abstraction" />
+      <recent name="E:\Anudip Batches\ANP-D7619\CodeFiles\Day23 - (24-10-2026) - Oops assignment" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ceac26c1-b3b3-4638-8112-bbecffddb2a1" name="Changes" comment="" />
+      <created>1792739977710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792739977710</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,65 @@
+Handling JSON and XML Data
+---------------------------
+JSON (JavaScript Object Notation) :
+It is a lightweight data interchange format used to store and exchange data between applications.
+Although JSON was originated from Java Script, but it is language-independent and is supported by Python, Java, Php, Java Script etc.
+Example:
+suppose we want to share employee information like id, name, dept with the client from server.
+Then its format will be:-
+{
+	"id":101,
+	"name":"Ajay Singh",
+	"dept" : "IT"
+	"skills":["Java", "Python","java script"]
+}
+
+Data types supported by JSON:-
+-----------------------------
+JSON Datatype			Python Datatype
+Object				Dictionary
+Array				List
+String				String
+Number				int/float
+Boolean				bool
+null				None
+
+Syntax for using JSON format:-
+
+import json
+
+json.function()
+
+-------------------------------------
+Methods of JSON:-
+dumps() :  it is used to convert a python object into JSON string.
+It will not create any file, it will just convert the object into string.
+Syntax:
+json.dumps(python object, indent=None, sort_keys=False)
+=> indent :  it adds the indentation for readability.
+=> sort_keys:  it sorts the dictionary keys alphabetically.
+=> separators : it is used to provide customized separator between keys and values.
+=> ensure_ascii :  it controls whether non-ascii characters are escaped or not.
+loads() :  it is used to convert json string into python object.
+It is particularly used when receiving  json data from an api or an application.
+Syntax:
+json.loads(json_string)
+=>   convert json array into python list
+jsondata = '["abc", "xyz", "ddd","eee"]'
+    values = json.loads(jsondata)
+
+dump():  it writes python object into json file.
+Syntax : json.dump(python object, file object, indent=None, sort_keys=False)
+
+load() : it reads json data from a file.
+it reads the json file and convert its data into the corresponding python object.
+Syntax:
+ob = json.load(fileobject)
+
+Questions
+Create a Python application to store student details in students.json.
+Requirements:
+1. Accept student ID, name, age and marks from the user.
+2. Store multiple student records in JSON format.
+3. Display all student records.
+4. Calculate and display the average marks.
+--------------------------------------------

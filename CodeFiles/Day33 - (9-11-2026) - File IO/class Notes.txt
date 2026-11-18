@@ -1,0 +1,31 @@
+os.path.join():  it is an inbuilt method of os module. It is used to cobine two or more paths to create a full directory path. 
+Syntax:
+os.path.join(path1, path2,...)
+Example:
+
+drive = "c:
+folder = "filedemo"
+filename = "abc.txt"
+
+filepath = os.path.join(drive, folder, filename)
+d:\fildemo\abc.txt
+
+==================================
+x mode in open method
+-----------------------------
+it is used to create a new file exclusively.  if the given file does not exists, then it creates a new file, otherwise it raises a FileExistsError. It does not allow to overwrite the files.
+
+=====================================
+os.path.exists():  it returns true if the file exists, otherwise it returns false.
+
+syntax:
+booleanvar = os.path.exists(filename)
+
+--------------------
+remove():  it is used to remove a file from the given directory.
+syntax:
+os.remove(filename)
+--------------------------
+os.listdir():  it returns the list of all the files from the gibven directory path.
+Syntax:
+	result = os.listdir("path")
