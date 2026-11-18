@@ -1,0 +1,19 @@
+Q1. Consider the following JSON string:
+data = '''
+{
+    "id": 101,
+    "name": "Rahul",
+    "age": 22,
+    "course": "Python"
+}
+'''
+Convert it into a Python dictionary and display each value separately.
+
+Q2. Store Multiple Records
+Accept details of 5 students from the user and store them in students.json.
+Each student should have:
+- Roll Number
+- Name
+- Marks
+- City
+Read the file and display all records.

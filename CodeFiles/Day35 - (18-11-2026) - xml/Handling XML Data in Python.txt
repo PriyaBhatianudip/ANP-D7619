@@ -1,0 +1,53 @@
+Handling XML Data in Python
+----------------------------
+
+XML stands for Extensible Markup Language. 
+It is a markup language which is used to store, organize and exchange structured data between different applications. 
+It allows developers to creates their own tags to describe the data.
+
+For Example:-
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+	<rollno>101</rollno>
+	<name>Rahul</name>
+	<age>22</age>
+	<course>Python</course>
+</student>
+
+XML is used where we need to:-
+1. store structured information
+2. exchange data between different applications
+3. configure files
+4. have data in Web services and enterprise applications
+5. it can also be used to represent the hierarchical structure.
+6. data exchange between different programming language.
+
+-------------------------------------------------------
+To read an xml file in python program:-
+Step1 :  import the xml.etree.ElementTree as et in the python file
+	import xml.etree.ElementTree as et
+Step 2:  use parse() method to read the file content into the python object.
+	tree = et.parse("filename.xml")
+Step 3:  use the getroot method to get the root tag name
+	getroot():  it returns the name of the root tag, for example Students is the root tag for all the students
+Step 4:  use findAll() method to get the records of all the students from the given root.
+	ob = root.findAll("subtagname")
+find():  it is used to get the value of a particular tag.
+	ob.find("tagname")
+--------------------------------------------------------------
+Methods:-
+Method			Purpose
+ET.parse()	- Reads and parses an XML file
+ET.Element()	- Creates a root element
+ET.SubElement()	- Creates a child element
+ET.ElementTree()	- Creates an XML document tree
+getroot()	- Returns the root element
+find()	- Finds the first matching child element
+findall()	- Finds all matching child elements
+iter()	- Iterates through matching elements
+get()	- Retrieves an attribute value
+set()	- Adds or updates an attribute
+remove()	- Removes a child element
+ET.indent()	- Formats XML with indentation
+write()	- Writes XML data into a file
+-----------------------------------------------

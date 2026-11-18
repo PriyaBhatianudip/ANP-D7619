@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Employees>
+    <Employee>
+        <Employee_Code>101</Employee_Code>
+        <Employee_Name>AA</Employee_Name>
+        <Age>27</Age>
+        <Salary>77000</Salary>
+    </Employee>
+</Employees>
